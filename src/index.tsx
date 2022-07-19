@@ -1,15 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import { ThemeProvider } from 'styled-components';
+import App from '../src/pages/App';
+import GitHubProvider from './context/GitHubProvider';
 import reportWebVitals from './reportWebVitals';
+
+import GlobalStyle from './themes/globalStyle';
+import theme from './themes/theme';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
+      <GitHubProvider>
+        <App />
+      </GitHubProvider>
+    </ThemeProvider>
   </React.StrictMode>
 );
 
