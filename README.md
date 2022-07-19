@@ -1,5 +1,5 @@
 # GitHub Api Interface  
-    Desafio de Projeto da Dio : Consumindo API do GitHub para buscas de users.
+    Desafio de Projeto da Dio : Consumindo API do GitHub para buscas de usuários.
 
 ## Preview
 <img src="public/preview.png"/>
